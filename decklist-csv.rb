@@ -26,7 +26,14 @@
 # 1 Sol Ring
 # 1 Command Tower
 #
-
+# This will output a CSV file that has a header row for each decklist it parsed, the
+# first column will be a list of every card in all the lists, and then each cell will
+# list that card if it were found in the list. From here you can do neat things like
+# count up all the occurences of each card to see how popular specific cards are for
+# the lists. Generally, this would be a specific Commander, but I don't know your life.
+#
+# Enjoy!
+#
 require 'csv'
 
 def line_ending(filename)
